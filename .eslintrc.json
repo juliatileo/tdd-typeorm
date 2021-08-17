@@ -15,7 +15,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "no-use-before-define": "off",
+    "no-use-before-define": "error",
     "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": [
       "error",
@@ -24,27 +24,26 @@
         "ts": "never"
       }
     ],
-    "no-useless-constructor": "off",
-    "camelcase": "off",
+    "no-useless-constructor": "error",
+    "camelcase": "error",
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
       }
     ],
-    "class-methods-use-this": "off",
+    "class-methods-use-this": "error",
     "lines-between-class-members": [
       "error",
       "always",
       { "exceptAfterSingleLine": true }
     ],
     "import/prefer-default-export": "off",
-    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
     "no-shadow": "off",
-    "no-console": "off",
-    "import"
+    "no-console": "warn"
   },
   "settings": {
     "import/resolver": {

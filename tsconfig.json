@@ -14,9 +14,12 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@config/*": ["./src/config/*"]
+      "@config/*": ["./src/config/*"],
+      "@database/*": ["./src/database/*"],
+      "@app_entities/*": ["./src/database/app/entity/*"],
+      "@plin_entities/*": ["./src/database/plin/entity/*"]
     }
   }
 }
