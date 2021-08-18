@@ -19,7 +19,9 @@
       "@config/*": ["./src/config/*"],
       "@database/*": ["./src/database/*"],
       "@app_entities/*": ["./src/database/app/entity/*"],
-      "@plin_entities/*": ["./src/database/plin/entity/*"]
+      "@plin_entities/*": ["./src/database/plin/entity/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }

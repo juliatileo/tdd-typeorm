@@ -27,7 +27,7 @@
       }
     ],
     "no-useless-constructor": "off",
-    "camelcase": "error",
+    "camelcase": "off",
     "prettier/prettier": [
       "error",
       {
