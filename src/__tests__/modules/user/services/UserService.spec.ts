@@ -21,6 +21,13 @@ beforeAll(async () => {
 });
 
 describe('UserService', () => {
+  it('should list all users', async () => {
+    const response: Response = await request(app).get('/users');
+
+    expect(response.status).toBe(200);
+    expect(Array.isArray(response.body)).toBe(true);
+  });
+
   it('should create', async () => {
     const response: Response = await request(app)
       .post('/users')
