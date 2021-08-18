@@ -21,7 +21,8 @@
       "@app_entities/*": ["./src/database/app/entity/*"],
       "@plin_entities/*": ["./src/database/plin/entity/*"],
       "@modules/*": ["./src/modules/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@shared/*": ["./src/shared/*"]
     }
   }
 }
