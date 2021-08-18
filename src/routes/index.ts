@@ -6,6 +6,7 @@ import {
   useContainer,
 } from 'routing-controllers';
 import { Container } from 'typedi';
+import { authorizationChecker } from '@modules/auth/middlewares/AuthorizationChecker';
 
 export function routes(app: Express): Express {
   useContainer(Container);
@@ -13,6 +14,7 @@ export function routes(app: Express): Express {
   const options: RoutingControllersOptions = {
     validation: true,
     cors: true,
+    authorizationChecker,
     controllers: [
       path.join(__dirname, '..', '/modules/**/controllers/*{.ts,.js}'),
     ],

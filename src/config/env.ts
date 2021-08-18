@@ -13,6 +13,7 @@ const {
   DB_PASS,
   DB_NAME,
   DB_PORT,
+  APP_SECRET,
 } = process.env;
 
 export {
@@ -26,4 +27,5 @@ export {
   DB_PASS,
   DB_NAME,
   DB_PORT,
+  APP_SECRET,
 };
