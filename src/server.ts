@@ -1,6 +1,5 @@
-import express from 'express';
+import 'reflect-metadata';
 import '@database/index';
-
-const app = express();
+import app from './app';
 
 app.listen(3333);

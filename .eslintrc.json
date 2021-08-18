@@ -7,13 +7,15 @@
   "extends": [
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 12
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./"
   },
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
     "no-use-before-define": "error",
     "@typescript-eslint/no-use-before-define": ["error"],
@@ -24,7 +26,7 @@
         "ts": "never"
       }
     ],
-    "no-useless-constructor": "error",
+    "no-useless-constructor": "off",
     "camelcase": "error",
     "prettier/prettier": [
       "error",
@@ -43,7 +45,8 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "warn",
     "no-shadow": "off",
-    "no-console": "warn"
+    "no-console": "warn",
+    "@typescript-eslint/no-floating-promises": "off"
   },
   "settings": {
     "import/resolver": {
